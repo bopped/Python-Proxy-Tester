@@ -6,7 +6,11 @@
 
 - Python 2 *as of now*
 
-- Proxies must be in double quotes aka **"ip:port"** 
+- Proxies must be in double quotes --  **"ip:port"** 
+
+- Sites must be in double quotes, as well as have http / https in the beginning! --  **"ip:port"** 
+
+- Please look at the examples (sites.json,proxies.json). 
 
 ----- USER:PASS Auth'ed proxies -----
 - Proxies must be in "username:password@ip:port" format. 
@@ -14,6 +18,8 @@
 - If your proxies are "ip:port:username:password" use: [Proxy Sorter](https://github.com/bopped/Python-Proxy-Sorter).
 
 - Last proxy must **NOT** have a comma at the end 
+
+- Last Site must **NOT** have a comma at the end 
 -------------------------------------
 ## Modules Needed:
 * Requests
