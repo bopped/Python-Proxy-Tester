@@ -2,7 +2,7 @@
 ## Test your proxies.
 ###### Developer: @bopped /// [My Twitter](https://twitter.com/Backdoorcook).
 
-- Info:
+## Info:
 
 - Python 2 *as of now*
 
@@ -17,7 +17,7 @@
 * Requests
 * Colorama 
 
-- Installation. 
+## Installation. 
 
 - If you don't know how to install modules - 
 1. Make sure python ** 2 ** is installed! 
@@ -26,12 +26,12 @@
 4. If you are on mac, you may need to do: sudo pip install requests colorama. 
 5. If Errors are present, please refer to Google. 
 
-- Troubleshooting
+## Troubleshooting
 
 - If you get the error "SyntaxError: Missing parentheses in call to 'print'", this means you have Python 3 installed.
 
 
-- Key 
+## Key 
 
 - Green Highlighted Proxy = Proxy is working.
 
