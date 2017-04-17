@@ -61,18 +61,18 @@ def sort(proxy,):
 
             if response.status_code == 200:
 
-                sys.stdout.write( "[{}] This thread is testing: {} got an OK status on {} it took {} MS to respond back \n".format(getCurrentTime(),Fore.GREEN + (proxy) + Style.RESET_ALL .center(25, ' '), site.center(10, '\t'),millis()-start))
+                sys.stdout.write( "[{}] This thread is testing: {} Tested on: {} Got an OK status, took {} MS to respond back \n".format(getCurrentTime(),Fore.GREEN + (proxy) + Style.RESET_ALL .center(25, ' '), site.center(10, '\t'),millis()-start))
 
                 with open('GoodProxies.txt', 'a') as f:
                     f.write('%s \n' % proxy)
 
             elif response.status_code != 200:
 
-                sys.stdout.write('[{}] This thread is testing: {} tested on {} got a bad status, it took {} MS to respond back \n'.format(getCurrentTime(), Fore.LIGHTYELLOW_EX + (proxy) + Style.RESET_ALL.center(25, ' '), site.center(10, '\t'),millis() - start))
+                sys.stdout.write('[{}] This thread is testing: {} Tested on: {} Got a bad status, it took {} MS to respond back \n'.format(getCurrentTime(), Fore.LIGHTYELLOW_EX + (proxy) + Style.RESET_ALL.center(25, ' '), site.center(10, '\t'),millis() - start))
 
         except Exception as E:
 
-            sys.stdout.write('[{}] This thread is testing: {} tested on {} did not return any status, it took {} MS to respond back \n' .format(getCurrentTime(), Fore.RED + (proxy) + Style.RESET_ALL.center(25, ' '), site.center(10, '\t'),millis() - start))
+            sys.stdout.write('[{}] This thread is testing: {} Tested on: {} Got an error, it took {} MS to respond back \n' .format(getCurrentTime(), Fore.RED + (proxy) + Style.RESET_ALL.center(25, ' '), site.center(10, '\t'),millis() - start))
 
 
 threads = []
