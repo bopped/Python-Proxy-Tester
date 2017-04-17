@@ -6,14 +6,15 @@
 
 - Python 2 *as of now*
 
-- Proxies must be in double quotes aka ** "ip:port", ** 
+- Proxies must be in double quotes aka **"ip:port"** 
 
+----- USER:PASS Auth'ed proxies -----
 - Proxies must be in "username:password@ip:port" format. 
 
 - If your proxies are "ip:port:username:password" use: [Proxy Sorter](https://github.com/bopped/Python-Proxy-Sorter).
 
-- Last proxy must ** NOT ** have a comma at the end 
-
+- Last proxy must **NOT** have a comma at the end 
+-------------------------------------
 ## Modules Needed:
 * Requests
 
@@ -22,7 +23,7 @@
 ## Help Me. 
 
 - If you don't know how to install modules - 
-1. Make sure python ** 2 ** is installed! 
+1. Make sure python _**2**_ is installed! 
 2. Open terminal / Command Prompt, and type pip. 
 3. If no errors are presented, you can go on and type the following: pip install requests colorama.
 4. If you are on mac, you may need to do: sudo pip install requests colorama. 
