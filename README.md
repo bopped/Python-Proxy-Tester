@@ -44,5 +44,5 @@
 - This is just a fast/easy way to test proxies.
 - I am not responsible what you do. 
 
-- Bugs:
+## Bugs:
 - DM me on twitter.
