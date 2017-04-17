@@ -1,6 +1,7 @@
 # Proxy Tester.py
 # developer: @bopped /// twtiter : @backdoorcook
 import requests , json , time , threading , sys
+from colorama import *
 
 #Current Ms display
 def millis():
@@ -60,17 +61,19 @@ def sort(proxy,):
 
             if response.status_code == 200:
 
-                sys.stdout.write('[%s] This thread is testing the following proxy: %s got an OK status on %s, it took %s MS to respond back \n' % (getCurrentTime(),(proxy),site,millis()-start))
-                
+                sys.stdout.write( "[{}] This thread is testing: {} got an OK status on {} it took {} MS to respond back \n".format(getCurrentTime(),Fore.GREEN + (proxy) + Style.RESET_ALL .center(25, ' '), site.center(10, '\t'),millis()-start))
+
+                with open('GoodProxies.txt', 'a') as f:
+                    f.write('%s \n' % proxy)
 
             elif response.status_code != 200:
 
-                sys.stdout.write('[%s] This thread is testing the following proxy: %s tested on %s , got a bad status, it took %s MS to respond back \n' % (getCurrentTime(), (proxy), site,millis() - start))
-
+                sys.stdout.write('[{}] This thread is testing: {} tested on {} got a bad status, it took {} MS to respond back \n'.format(getCurrentTime(), Fore.LIGHTYELLOW_EX + (proxy) + Style.RESET_ALL.center(25, ' '), site.center(10, '\t'),millis() - start))
 
         except Exception as E:
 
-            sys.stdout.write('[%s] This thread is testing the following proxy: %s tested on %s , did not return any status, it took %s MS to respond back \n' % (getCurrentTime(), (proxy), site, millis() - start))
+            sys.stdout.write('[{}] This thread is testing: {} tested on {} did not return any status, it took {} MS to respond back \n' .format(getCurrentTime(), Fore.RED + (proxy) + Style.RESET_ALL.center(25, ' '), site.center(10, '\t'),millis() - start))
+
 
 threads = []
 
