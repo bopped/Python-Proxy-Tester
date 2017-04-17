@@ -8,7 +8,7 @@
 
 - Proxies must be in double quotes --  **"ip:port"** 
 
-- Sites must be in double quotes, as well as have http / https in the beginning! --  **"ip:port"** 
+- Sites must be in double quotes, as well as have http / https in the beginning! --  **"http://www.adidas.com/us/"** 
 
 - Please look at the examples (sites.json,proxies.json). 
 
