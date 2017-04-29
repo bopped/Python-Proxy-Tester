@@ -1,5 +1,5 @@
 # Proxy Tester.py
-# developer: @bopped /// twtiter : @backdoorcook
+# developer: @bopped /// twitter : @backdoorcook
 import requests , json , time , threading , sys
 from colorama import *
 
